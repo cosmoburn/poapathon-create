@@ -101,6 +101,7 @@ const Header = styled.div`
 const Body = styled.div`
   flex-grow: 1;
   width: 100%;
+  max-width: 920px;
 `
 
 const Footer = styled.div`

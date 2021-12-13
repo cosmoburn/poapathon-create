@@ -13,7 +13,7 @@ const ControlButton = ({ color, onClick, text }) => {
 const StyledButton = styled.button`
   background: white;
   padding: 8px 16px;
-  min-width: 230px;
+  min-width: 240px;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
