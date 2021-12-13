@@ -30,7 +30,6 @@ const PreviewWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
   padding: .5rem;
   
   @media (min-width: 600px) {

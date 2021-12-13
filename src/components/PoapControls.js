@@ -87,7 +87,6 @@ const PoapControls = ({ updatePOAP }) => {
 }
 
 const ControlsWrapper = styled.div`
-  background: aquamarine;
   padding: .5rem;
   display: grid;
   align-items: center;
