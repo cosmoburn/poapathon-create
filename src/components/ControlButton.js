@@ -2,6 +2,16 @@ import React from 'react'
 import styled from '@emotion/styled'
 
 const ControlButton = ({ color, onClick, text }) => {
+
+  if (text && text === 'Download') {
+    return (
+      <DownloadButton onClick={onClick}>
+        {text}
+      </DownloadButton>
+    )
+
+  }
+
   return (
     <StyledButton onClick={onClick}>
       <Icon color={color?.hex}/>
@@ -23,7 +33,6 @@ const Icon = styled.div`
   width: 32px;
   height: 32px;
   background: ${p => p.color ? p.color : '#f9879a'};
-  //border: 1px solid black;
   position: relative;
   border-radius: 50%;
   margin-right: 16px;
@@ -52,8 +61,18 @@ const Icon = styled.div`
     top: 50%;
     border-radius: 8px;
     transform: translate(-50%, -50%);
-    
   }
+`
+
+const DownloadButton =  styled.button`
+  background: #6634ff;
+  color: white;
+  padding: 8px 16px;
+  min-width: 240px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 export default ControlButton

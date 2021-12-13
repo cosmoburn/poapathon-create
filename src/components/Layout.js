@@ -92,10 +92,14 @@ const LayoutWrapper = styled.div`
 `
 
 const Header = styled.div`
-  padding: 2rem;
+  padding: .5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  @media (min-width: 600px) {
+    padding: 2rem;
+  }
 `
 
 const Body = styled.div`

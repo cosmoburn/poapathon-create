@@ -29,6 +29,7 @@ const Home = () => {
 const MainWrapper = styled.main`
   height: 100%;
   display: grid;
+  justify-content: center;
   
   @media (min-width: 600px) {
     grid-template-columns: 1fr 1fr;
